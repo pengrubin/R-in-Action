@@ -19,7 +19,8 @@ plot(age,weight)
 
 # Listing 1.2 - An example of commands used to manage the R Workspace. 
 
-setwd("C:/myprojects/project1") # change the path to one of your directories
+setwd("/Users/hongwei/Documents/GitHub/R-in-Action") # change the path to one of your directories
+#dir.create() and then setwd() to set a new dir as work path.
 options()
 options(digits=3)
 x <- runif(20)
