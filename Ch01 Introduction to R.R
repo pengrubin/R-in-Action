@@ -27,17 +27,27 @@ x <- runif(20)
 summary(x)
 hist(x)
 savehistory()
+#load(".RData") to get back the values
 save.image()
 # q()
 
 
 # Listing 1.3 - Working with a new package
 
+#source("script1.R")
+#sink("myoutput",append=TRUE,split=TRUE) put out put to screen and add the new output after myoutput doc.
+#pdf() save as pdf
+#sink() and dev.off() put all to screen.
 help.start()
 install.packages("vcd")
+.libPaths() #show library path.
+library() #show all packages.
+update.packages()
 help(package="vcd")
 library(vcd)
 help(Arthritis)
 Arthritis
 example(Arthritis)
 # q()
+
+#R CMD BATCH options infile outfile
